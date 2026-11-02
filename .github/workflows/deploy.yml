@@ -27,7 +27,7 @@ jobs:
           mkdir _site
           git archive HEAD | tar -x -C _site
           rm -rf _site/.github _site/*.zip
-          for p in wordplay wordtouch vereinsnamensfindung my-human; do
+          for p in wordplay wordtouch vereinsnamensfindung my-human gesellschaft; do
             unzip -q $p.zip -d _site/$p
           done
       - uses: actions/upload-pages-artifact@v3
